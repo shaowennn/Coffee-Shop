@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://Shop" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:impl="http://Shop" xmlns:intf="http://Shop" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<!--WSDL created by Apache Axis version: 1.4
+Built on Apr 22, 2006 (06:55:48 PDT)-->
+
+   <wsdl:portType name="Cart_Servlet">
+
+   </wsdl:portType>
+
+   <wsdl:binding name="Cart_ServletSoapBinding" type="impl:Cart_Servlet">
+
+      <wsdlsoap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+
+   </wsdl:binding>
+
+   <wsdl:service name="Cart_ServletService">
+
+      <wsdl:port binding="impl:Cart_ServletSoapBinding" name="Cart_Servlet">
+
+         <wsdlsoap:address location="http://localhost:8080/Shop/services/Cart_Servlet"/>
+
+      </wsdl:port>
+
+   </wsdl:service>
+
+</wsdl:definitions>
